@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+.card {
+  background: #1a1a1a;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--red);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Nunito', sans-serif;
+  width: 900px;      
+  margin: 1rem auto;   
+}
+
+.card:hover {
+  background: #1e1e1e;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #FF3B3B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+  color: #111;
+  flex-shrink: 0;
+}
+
+.author {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #FF3B3B;
+}
+
+.date {
+  font-size: 0.72rem;
+  color: #555;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 7px;
+  line-height: 1.3;
+}
+
+.message {
+  font-size: 0.88rem;
+  color: #777;
+  line-height: 1.65;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.footer {
+  border-top: 1px solid #242424;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.likeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  color: #555;
+  transition: background 0.15s, color 0.15s;
+}
+
+.likeBtn:hover {
+  background: rgba(255, 59, 59, 0.08);
+}
+
+.likeBtn svg {
+  width: 18px;
+  height: 18px;
+  transition: fill 0.15s, stroke 0.15s;
+}
+
+.liked {
+  color: #FF3B3B !important;
+}
+
+.liked svg {
+  fill: #FF3B3B;
+  stroke: #FF3B3B;
+}
+
+.count {
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.commentBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  color: #555;
+  transition: background 0.15s, color 0.15s;
+}
+
+.commentBtn:hover {
+  background: rgba(255, 59, 59, 0.08);
+  color: #FF3B3B;
+}
+
+.commentBtn svg {
+  width: 18px;
+  height: 18px;
+}.track {
+  width: 52px;
+  height: 28px;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 14px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.25s;
+}
+
+.track.on {
+  background: #FF3B3B;
+  border-color: #FF3B3B;
+}
+
+.thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: #555;
+  border-radius: 50%;
+  transition: transform 0.25s, background 0.25s;
+}
+
+.track.on .thumb {
+  transform: translateX(24px);
+  background: #111;
+}
+
+.label {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #555;
+  transition: color 0.25s;
+}
+
+.label.on {
+  color: #FF3B3B;
+}
+
+/* Badge público/privado */
+.badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.badgePublic {
+  background: #e6f4ea;
+  color: #2d7a3a;
+}
+
+.badgePrivate {
+  background: #f0f0f0;
+  color: #666;
+}
+
+/* Menú tres puntos */
+.menuWrapper {
+  position: relative;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1;
+}
+
+.menuBtn:hover {
+  background: #f3f3f3;
+  color: #111;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 165px;
+  background: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 4px;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.dropdownItem svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  stroke: #888;
+}
+
+.dropdownItem:hover {
+  background: #f5f5f5;
+}
+
+.dropdownItem.danger {
+  color: #c0392b;
+}
+
+.dropdownItem.danger svg {
+  stroke: #c0392b;
+}
+
+.dropdownDivider {
+  height: 0.5px;
+  background: #eee;
+  margin: 4px 0;
+}
+
+/* Likes en el footer */
+.likes {
+  margin-left: 12px;
+  font-size: 13px;
+  color: #888;
+  display: flex;
+  align-items: center;
+}

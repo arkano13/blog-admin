@@ -1,0 +1,109 @@
+/* src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Barlow+Condensed:wght@700;900&display=swap');
+
+/* ── Variables ── */
+:root {
+  --red:        #FF3B3B;
+  --red-dim:    rgba(255, 59, 59, 0.15);
+  --red-hover:  #ff6b6b;
+
+  --bg:         #111111;
+  --bg-card:    #1a1a1a;
+  --bg-hover:   #1e1e1e;
+  --bg-input:   #161616;
+
+  --border:     #2a2a2a;
+  --border-md:  #333333;
+
+  --text-white:  #ffffff;
+  --text-muted:  #777777;
+  --text-dim:    #555555;
+
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: var(--bg);
+  color: var(--text-white);
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, textarea {
+  font-family: 'Nunito', sans-serif;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-white);
+  padding: 0.6rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--red);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-dim);
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-md);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
+}
+
+
+::selection {
+  background: var(--red-dim);
+  color: var(--red-hover);
+}

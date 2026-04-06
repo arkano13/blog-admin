@@ -1,0 +1,81 @@
+/* PostForm.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+.form {
+  background: #1a1a1a;
+  border: 1px solid #242424;
+  border-left: 3px solid #FF3B3B;
+  border-radius: 12px;
+  padding: 1.4rem;
+  width: 900px;
+  margin: 1.5rem auto;
+  font-family: 'Nunito', sans-serif;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #111;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 0.75rem;
+}
+
+.input:focus {
+  border-color: #FF3B3B;
+}
+
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #111;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 0.75rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.textarea:focus {
+  border-color: #FF3B3B;
+}
+
+.btn {
+  background: #FF3B3B;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  color: #111;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.88;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 0.78rem;
+  color: #FF3B3B;
+  margin: -0.5rem 0 0.75rem;
+}

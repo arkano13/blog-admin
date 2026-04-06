@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Barlow+Condensed:wght@900&display=swap');
+
+.navbar {
+  background: #111;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,0.015) 40px,
+    rgba(255,255,255,0.015) 41px
+  );
+  pointer-events: none;
+}
+
+.logo {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.4rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  position: relative;
+  z-index: 1;
+}
+
+.dot {
+  color: #FF3B3B;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.link {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  text-decoration: none;
+  padding: 6px 14px;
+  border: 1.5px solid transparent;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.link:hover {
+  color: #fff;
+  border-color: rgba(255, 59, 59, 0.5);
+}
+
+.active {
+  color: #111 !important;
+  background: #FF3B3B;
+  border-color: #FF3B3B;
+}
+
+.tag {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 0.6rem;
+  color: rgba(255, 59, 59, 0.4);
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+}
+
+.logout {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FF3B3B;
+  background: none;
+  border: 1.5px solid rgba(255, 59, 59, 0.5);
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+}
+
+.logout:hover {
+  color: #fff;
+  background: #FF3B3B;
+  border-color: #FF3B3B;
+}

@@ -1,0 +1,53 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg-main);
+}
+
+/* contenedor principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* header del dashboard */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* lista de posts */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* estado vacío */
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 3rem 0;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+}
+
+/* loader */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-muted);
+}

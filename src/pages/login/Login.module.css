@@ -1,0 +1,107 @@
+/* Login.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Nunito', sans-serif;
+  background: #111;
+}
+
+.wrap {
+  background: #1a1a1a;
+  border: 1px solid #242424;
+  border-left: 3px solid #FF3B3B;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.brand {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #FF3B3B;
+  margin-bottom: 0.25rem;
+}
+
+.sub {
+  font-size: 0.82rem;
+  color: #555;
+  margin-bottom: 1.75rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.field {
+  width: 100%;
+  box-sizing: border-box;
+  background: #111;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 1.1rem;
+}
+
+.field:focus {
+  border-color: #FF3B3B;
+}
+
+.btn {
+  width: 100%;
+  background: #FF3B3B;
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  color: #111;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  opacity: 0.88;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #242424;
+  margin: 1.5rem 0;
+}
+
+.foot {
+  font-size: 0.8rem;
+  color: #555;
+  text-align: center;
+}
+
+.link {
+  color: #FF3B3B;
+  font-weight: 700;
+  cursor: pointer;
+}
+.error {
+  font-size: 0.78rem;
+  color: #FF3B3B;
+  margin: 0 0 0.75rem;
+}
